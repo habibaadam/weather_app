@@ -1,9 +1,8 @@
 """ Importing library for creating GUI"""
-from tkinter import *
-import tkinter as tt
+import tkinter as tk
 
 """Library for converting address to longitude and latitude"""
-from geopy.geocoders import nominatim
+from geopy.geocoders import Nominatim
 
 """Importing module for finding timezone for locations"""
 from timezonefinder import TimezoneFinder
@@ -19,3 +18,12 @@ import requests
 
 """Importing module for creating dialogue boxes in GUI"""
 from tkinter import ttk, messagebox
+
+"""Setting up the main window for our app"""
+window = tk.Tk()
+window.title("OUR WEATHER")
+window.geometry("900x500+300+200")
+window.resizable(True, True)
+
+
+window.mainloop()
