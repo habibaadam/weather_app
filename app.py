@@ -1,7 +1,5 @@
 """ Importing library for creating GUI"""
 from tkinter import *
-
-"""Alias set for library"""
 import tkinter as tt
 
 """Library for converting address to longitude and latitude"""
@@ -13,7 +11,7 @@ from timezonefinder import TimezoneFinder
 """Importing library for manipulating datetime objects"""
 import pytz
 
-"""Importing module for working with dates ans times"""
+"""Importing module for working with dates and times"""
 from datetime import datetime
 
 """Importing  module for making HTTP requests and getting responses"""
