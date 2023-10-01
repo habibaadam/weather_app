@@ -26,34 +26,38 @@ from tkinter import ttk, messagebox
 """Setting up the main window for our app"""
 
 window = tk.Tk()
-window.configure(bg="black")
 window.title("OUR WEATHER")
 window.geometry("900x500+300+200")
 
 """Trying to set background image"""
 
-background_image = Image.open("/Users/macbookair/Desktop/w_m/bbgcool.jpeg")
-background_photo = ImageTk.PhotoImage(background_image)
+#background_image = Image.open("/Users/macbookair/Desktop/w_m/bbgcool.jpeg")
+#background_photo = ImageTk.PhotoImage(background_image)
 
 """Create a label to display the background image"""
-background_label = tk.Label(window, image=background_photo)
-background_label.place(relwidth=1, relheight=1)  # Making the label cover the entire window
+#background_label = tk.Label(window, image=background_photo)
+#background_label.place(relwidth=1, relheight=1) #Making the label cover the entire window
 
-window.resizable(True, True)
+window.resizable(False, False)
+
 
 """Seach box"""
 Box_image=PhotoImage(file="/Users/macbookair/Desktop/w_m/search.png")
 ourimage=Label(image=Box_image)
 ourimage.place(x=20,y=20)
 
-textfield=tk.Entry(window,justify="center", width=17,font=("poppins",25,"bold"), bg="#FFA500", border=0, fg="white")
+textfield=tk.Entry(window,justify="center", width=17,font=("poppins",25,"bold"), bg="#404040", border=0, fg="#ADD8E6")
 textfield.place(x=50,y=40)
 textfield.focus()
 
 """seach icon"""
 icon_image=tk.PhotoImage(file="/Users/macbookair/Desktop/w_m/search_icon.png")
-our_icon_image=Button(image=icon_image, borderwidth=0, cursor="hand2", bg="#FF8C00")
-resized_icon_image = icon_image.subsample(1)
+our_icon_image=Button(image=icon_image, borderwidth=0, cursor="hand2", bg="#404040")
 our_icon_image.place(x=400,y=34)
+
+"""Logo"""
+logo_image = PhotoImage(file="/Users/macbookair/Desktop/w_m/Copy of logo.png")
+logolabel = Label(image=logo_image)
+logolabel.place(x=150, y=100)
 
 window.mainloop()
